@@ -6,10 +6,11 @@ la conexion a la base de datos para el logueo lo haremos con los metodos de axio
  
 
 
-// Creo una constante con la URL del servicio donde me  voy a conectar con este codigo
+// onexion con mi localhost para la union con mi backend
 const base= axios.create({
 	baseURL: 'https://glacial-everglades-74306.herokuapp.com'
-})
+	//baseURL: 'https://localhost:3000'
+});
 
 
 // Este comando tambien se usa y se vincula con la constante base que se definío en la parte de arriba	

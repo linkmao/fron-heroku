@@ -17,7 +17,7 @@
 </nav>
 <div>
 	<p>
-		{{ user.nombre}}
+		{{ user.username}}
 	</p>
 	<p>
 		{{user.email}}

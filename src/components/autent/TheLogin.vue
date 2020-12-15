@@ -8,7 +8,7 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input v-model="login.pass" type="password" class="form-control" id="exampleInputPassword1">
+    <input v-model="login.password" type="password" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -20,7 +20,7 @@
 <pre>
 
 	{{login.email}}
-	{{login.pass}}
+	{{login.password}}
 </pre>
 
 </div>
@@ -38,7 +38,7 @@
 		data (){return{
 			login:{
 				email:'',
-				pass:''
+				password:''
 			}
 		}
 
@@ -47,7 +47,7 @@
 		async loginUser(){
 			try{
 				let response = await this.$http.post('/api/usuario/login', this.login);
-				console.log('response');
+				console.log('response.data');
 				let token = response.data.tokenReturn;
 				let user=response.data.user;
 				localStorage.setItem('jwt',token);
