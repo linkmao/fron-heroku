@@ -46,7 +46,7 @@
 	methods:{
 		async loginUser(){
 			try{
-				let response = await this.$http.post('/api/usuario/login', this.login);
+				let response = await this.$http.post('/api/user/login', this.login);
 				console.log(response.data);
 				const token = response.data.tokenReturn;
 				const user=response.data.user;
