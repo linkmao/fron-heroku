@@ -30,7 +30,7 @@
 
 
 <script>
-	export default {name: 'TheHome',data (){return{}}, methods:{getDetallesUsuario(){let user = localStorage.getItem('user'); let token=localStorage.getItem('jwt') ; if (token){this.user=JSON.parse(user)}}, logOut(){localStorage.removeItem("jwt");localStorage.removeItem("user") ;this.$router.push('/')}}, create(){this.getDetallesUsuario();}	}
+	export default {name: 'TheHome',data (){return{user:''}}, methods:{getDetallesUsuario(){const user = localStorage.getItem('user'); const token=localStorage.getItem('jwt') ; if (token){this.user=JSON.parse(user)}}, logOut(){localStorage.removeItem("jwt");localStorage.removeItem("user") ;this.$router.push('/')}}, create(){this.getDetallesUsuario();}	}
 
 
 </script>

@@ -47,9 +47,9 @@
 		async loginUser(){
 			try{
 				let response = await this.$http.post('/api/usuario/login', this.login);
-				console.log('response.data');
-				let token = response.data.tokenReturn;
-				let user=response.data.user;
+				console.log(response.data);
+				const token = response.data.tokenReturn;
+				const user=response.data.user;
 				localStorage.setItem('jwt',token);
 				localStorage.setItem('user', JSON.stringify(user));
 				if (token){
