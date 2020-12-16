@@ -8,8 +8,9 @@ la conexion a la base de datos para el logueo lo haremos con los metodos de axio
 
 // onexion con mi localhost para la union con mi backend
 const base= axios.create({
-	  baseURL: 'http://localhost:3000'
+	//  baseURL: 'http://localhost:3000'
 	//baseURL: 'https://glacial-everglades-74306.herokuapp.com'
+	baseURL: 'https://quiet-journey-67232.herokuapp.com/' // Para despliegue en mi heroku
 });
 
 
