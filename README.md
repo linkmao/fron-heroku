@@ -1,5 +1,11 @@
 # rutas-vue
 
+## depliegue a heroku
+Este pequeño proyecto de ejemplo se ha desplegado en heroku, al igual que el backend
+
+
+# Configuraciones para el desplieue dadas por el proyecto de mision tic
+
 ## Project setup
 ```
 npm install

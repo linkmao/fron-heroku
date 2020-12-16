@@ -1,0 +1,11 @@
+// Este archivo y configuracion son necesarios para el despliegue en heroku, par aservidor local no es necesario
+
+{
+	"root":"dist",
+	"clean-urls":"true",
+	"routes":{
+		"/**": "index.html"
+	}
+
+
+}
